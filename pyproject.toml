@@ -1,0 +1,33 @@
+[project]
+name = "pharmacovigilance-openfda"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "malickl", email = "mahassadiadou@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-bigquery>=1.12.1",
+    "dbt-core>=1.12.6",
+    "google-cloud-bigquery>=3.47.0",
+    "google-cloud-storage>=3.1.1",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+pharmacovigilance-openfda = "pharmacovigilance_openfda:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "db-dtypes>=1.9.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.0",
+    "scikit-learn>=1.9.1",
+    "xgboost>=3.4.1",
+]
