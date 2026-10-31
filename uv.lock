@@ -2536,6 +2536,7 @@ dependencies = [
     { name = "dbt-core" },
     { name = "google-cloud-bigquery" },
     { name = "google-cloud-storage" },
+    { name = "python-dotenv" },
     { name = "requests" },
 ]
 
@@ -2555,6 +2556,7 @@ requires-dist = [
     { name = "dbt-core", specifier = ">=1.12.6" },
     { name = "google-cloud-bigquery", specifier = ">=3.47.0" },
     { name = "google-cloud-storage", specifier = ">=3.1.1" },
+    { name = "python-dotenv", specifier = ">=1.2.4" },
     { name = "requests", specifier = ">=2.34.2" },
 ]
 
